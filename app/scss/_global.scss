@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+body {
+  font-size: 18px;
+  @extend %rubik-400;
+  color: $text;
+  background-image: url(../images/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 14px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  @extend %rubik-500;
+}

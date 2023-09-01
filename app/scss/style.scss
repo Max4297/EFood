@@ -1,0 +1,195 @@
+@import "reset";
+@import "vars";
+@import "fonts";
+@import "global";
+@import "sprite";
+
+.header {
+  &__inner {
+    padding: 55px 0;
+    // background-image: url("../images/header.webp");
+    // background-repeat: no-repeat;
+    // background-position: bottom right;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top-special-buttons {
+  }
+
+  &__top-signlink {
+  }
+
+  &__content {
+    max-width: 530px;
+    text-transform: capitalize;
+  }
+
+  &__content-title {
+    font-size: 66px;
+    @extend %rubik-500;
+    span {
+      color: #ff7a50;
+    }
+  }
+
+  &__content-subtitle {
+    font-size: 20px;
+    @extend %rubik-400;
+  }
+
+  &__content-links {
+  }
+
+  &__content-btn {
+  }
+
+  &__content-link {
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-item + .menu__list-item {
+    margin-left: 60px;
+  }
+
+  &__list-link {
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  &__list-link:hover {
+    color: $accent;
+  }
+
+  &__list-link--sign {
+    width: 120px;
+    height: 50.408px;
+    padding: 14px 28px;
+    border-radius: 5px;
+    box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
+    @extend %btn;
+  }
+
+  &__list-link--sign:hover {
+    color: #ffffff;
+  }
+}
+
+.footer {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #37383d;
+    padding-bottom: 25px;
+  }
+
+  &__info {
+    max-width: 230px;
+  }
+
+  &__logo {
+    padding-bottom: 30px;
+  }
+
+  &__info-phone,
+  &__info-email,
+  &__info-location {
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social-item {
+  }
+
+  &__social-link {
+  }
+
+  &__service {
+  }
+
+  &__service-title,
+  &__company-title,
+  &__supports-title,
+  &__resources-title {
+    padding-bottom: 30px;
+    @extend %rubik-500;
+    font-size: 18px;
+  }
+
+  &__service-list,
+  &__company-list,
+  &__supports-list,
+  &__resources-list {
+    width: 165px;
+  }
+
+  &__service-item,
+  &__company-item,
+  &__supports-item,
+  &__resources-item {
+    padding-bottom: 30px;
+  }
+
+  &__service-link {
+  }
+
+  &__company {
+  }
+
+  &__company-link {
+  }
+
+  &__supports {
+  }
+
+  &__supports-link {
+  }
+
+  &__resources {
+  }
+
+  &__resources-link {
+  }
+
+  &__copywriting {
+    border-top: 1px solid rgb(150, 150, 150, 0.2);
+    padding: 26px 0 36px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 14px;
+    @extend %rubik-400;
+  }
+
+  &__copywriting-list {
+    display: flex;
+  }
+
+  &__copywriting-item + &__copywriting-item {
+    margin-left: 52px;
+  }
+
+  &__copywriting-link {
+    color: #646464;
+  }
+}
+
+@import "media";

@@ -23,6 +23,7 @@ body {
   background-image: url(../images/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
 }
 
 .container {
@@ -34,4 +35,11 @@ body {
 .title {
   font-size: 36px;
   @extend %rubik-500;
+  line-height: 30px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.accent-text {
+  color: $accent;
 }

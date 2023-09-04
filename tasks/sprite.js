@@ -6,8 +6,9 @@ module.exports = function sprite() {
     .pipe(
       svgSprite({
         mode: {
-          symbol: {
+          stack: {
             sprite: "../sprite.svg",
+            example: true,
           },
         },
         prefix: "icon-%f",

@@ -12,8 +12,8 @@ module.exports = function watching() {
     browserSync.reload
   );
   watch("app/scss/*.scss", parallel("styles")).on("change", browserSync.reload);
-  watch("app/js/*.js", parallel("scripts"));
-  watch("app/images/src/*", series("images", "sprite")).on(
+  watch(["app/js/**/*.js", "!app/js/main.min.js"], parallel("scripts"));
+  watch("app/images/src/*", parallel("images", "sprite")).on(
     "change",
     browserSync.reload
   );

@@ -343,6 +343,53 @@
   }
 }
 
+.mobile-app {
+  padding-top: 45px;
+  padding-bottom: 138px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    max-width: 538px;
+  }
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 36px;
+    line-height: 50px; /* 138.889% */
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    opacity: 0.9;
+    text-align: justify;
+  }
+
+  &__wrapper-links {
+    max-width: 290px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 616.743px;
+    height: 480.593px;
+    overflow: hidden;
+  }
+
+  &__link-google {
+    width: 135px;
+    height: 40px;
+  }
+}
+
 .footer {
   &__content {
     display: flex;

@@ -47,7 +47,7 @@
 }
 
 .top {
-  padding-top: 100px;
+  padding-top: 50px;
   min-height: calc(100vh - 121px);
 
   &__inner {
@@ -325,7 +325,7 @@
       width: 100%;
       height: 100%;
       background-repeat: no-repeat;
-      left: 0px;
+      left: 0;
       bottom: 0;
       content: "";
       background-size: contain;
@@ -345,7 +345,7 @@
 
 .mobile-app {
   padding-top: 45px;
-  padding-bottom: 138px;
+  padding-bottom: 70px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -359,7 +359,7 @@
   &__title {
     @extend %rubik-500;
     font-size: 36px;
-    line-height: 50px; /* 138.889% */
+    line-height: 50px;
     text-transform: capitalize;
     margin-bottom: 30px;
   }
@@ -390,7 +390,88 @@
   }
 }
 
+.subscribe {
+  padding: 70px 0 60px;
+  &__inner {
+    padding: 59px 0 56px;
+    background-color: $accent;
+    text-align: center;
+    color: #fff;
+    background-image: url(../images/sprite.svg#subscribe-bg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+  }
+
+  &__title {
+    font-size: 40px;
+    @extend %rubik-500;
+    padding-bottom: 12px;
+  }
+
+  &__text {
+    padding-bottom: 31.5px;
+    line-height: 30px;
+    opacity: 0.8;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 838.5px;
+    max-height: 78px;
+    border-radius: 70px;
+    background: #fff;
+    box-shadow: 10px 24px 54px 0px rgba(0, 0, 0, 0.07);
+    padding: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 70px;
+    opacity: 0.9;
+    border: none;
+    line-height: 30px;
+    color: $text;
+    padding: 24px 43px;
+    @extend %rubik-400;
+    &::placeholder {
+      @extend %rubik-400;
+      color: $text;
+      border: none;
+    }
+  }
+
+  &__btn {
+    max-width: 191.1px;
+    width: 100%;
+    max-height: 58px;
+    border-radius: 70px;
+    padding: 15px 33px 15px 47px;
+    border: none;
+    line-height: 30px;
+    font-size: 20px;
+    @extend %rubik-500;
+    @extend %btn;
+    position: relative;
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 16px;
+      background-repeat: no-repeat;
+      left: 5px;
+      top: 23px;
+      content: "";
+      background-size: contain;
+      background-image: url(../images/sprite.svg#subscribe);
+    }
+  }
+}
+
 .footer {
+  padding-top: 60px;
   &__content {
     display: flex;
     justify-content: space-between;
@@ -425,9 +506,6 @@
   &__social-item {
   }
 
-  &__social-link {
-  }
-
   &__service {
   }
 
@@ -454,25 +532,11 @@
     padding-bottom: 30px;
   }
 
-  &__service-link {
-  }
-
-  &__company {
-  }
-
-  &__company-link {
-  }
-
-  &__supports {
-  }
-
-  &__supports-link {
-  }
-
-  &__resources {
-  }
-
-  &__resources-link {
+  &__service-link:hover,
+  &__company-link:hover,
+  &__supports-link:hover,
+  &__resources-link:hover {
+    color: $accent;
   }
 
   &__copywriting {

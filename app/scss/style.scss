@@ -98,7 +98,7 @@
     padding-bottom: 55px;
   }
 
-  &__slider {
+  &__inner {
   }
 
   &__slider-buttons {
@@ -111,12 +111,52 @@
   }
 
   &__buttons-item {
-    padding: 13px 47px;
+    max-width: 210px;
+    height: 70px;
+    width: 100%;
     border-radius: 8px;
     font-style: 20px;
     cursor: pointer;
-    background-color: #ffffff;
+    // background-color: #ffffff;
+    position: relative;
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 50px;
+    background-color: #fff;
   }
+
+  &__buttons-link--burger::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/sprite.svg#burger-icon);
+    width: 100%;
+    height: 44px;
+    background-repeat: no-repeat;
+    left: -20px;
+    bottom: 0;
+    top: 13px;
+    use.svg {
+      fill: red;
+    }
+  }
+
+  // &__buttons-item--pizza::after,
+  // &__buttons-item--sandwich::after,
+  // &__buttons-item--asianfood::after,
+  // &__buttons-item--setmenu::after {
+  // }
+  // &__buttons-item--burger::after,
+  // &__buttons-item--pizza::after,
+  // &__buttons-item--sandwich::after,
+  // &__buttons-item--asianfood::after,
+  // &__buttons-item--setmenu::after {
+  //   content: "";
+  //   width: 1px;
+  //   height: 1px;
+  //   background-image: url(../images/sprite.svg#burger-icon);
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  // }
 
   &__buttons-item--active {
     @extend %btn;
@@ -124,34 +164,24 @@
   }
 
   &__slider-items {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     margin-bottom: 20px;
-    position: relative;
   }
-
-  .slick-prev,
-  .slick-next {
-    display: none;
-  }
-
-  .slick-arrows {
-    bottom: 0;
-    position: absolute;
-  }
-
-  // .slick-next {
-  // }
 
   &__slider-item {
-    width: 208px;
+    max-width: 208px;
+    width: 100%;
+    height: 279px;
     background-color: #ffffff;
-    display: flex !important;
+    display: flex;
     align-items: center;
     flex-direction: column;
   }
 
   &__item-img {
+    max-width: 144px;
+    object-fit: cover;
     padding-bottom: 25px;
   }
 
@@ -168,6 +198,54 @@
     border-radius: 2px;
     padding: 7px 13px;
     margin-bottom: 29px;
+  }
+
+  .slick-arrow {
+    position: absolute;
+  }
+
+  .slick-next,
+  .slick-prev {
+    border: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .slick-prev {
+    bottom: -12px;
+    left: calc(100% - 70%);
+  }
+
+  .slick-next {
+    right: calc(100% - 70%);
+  }
+
+  .slick-dots {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 0 14px;
+    }
+    button {
+      border: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      padding: 0;
+      font-size: 0;
+    }
+    li.slick-active {
+      button {
+        background-color: $accent;
+      }
+    }
   }
 }
 

@@ -22,14 +22,12 @@
     "gulp-sass": "^5.1.0",
     "gulp-svg-sprite": "^2.0.3",
     "gulp-svgmin": "^4.1.0",
-    "gulp-svgo": "^2.2.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "jquery": "^3.7.1",
     "require-dir": "^1.2.0",
     "sass": "^1.66.1",
-    "slick-carousel": "^1.8.1",
-    "svgo": "^3.0.2"
+    "slick-carousel": "^1.8.1"
   }
 }

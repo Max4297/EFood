@@ -6,9 +6,21 @@ $(function () {
     dots: true,
     autoplay: false,
     prevArrow:
-      '<button type="button" class="slick-prev"><svg class="svg-roundarrow-left-dims"><use xlink:href="../images/sprite.svg#roundarrow-left"></svg></button>',
+      '<button type="button" class="category__slick-prev"><svg class="category__slider-leftArrow"><use xlink:href="../images/sprite.svg#roundarrow-left"></svg></button>',
     nextArrow:
-      '<button type="button" class="slick-next"><svg class="svg-roundarrow-right-dims"><use xlink:href="../images/sprite.svg#roundarrow-right"></svg></button>',
+      '<button type="button" class="category__slick-next"><svg class="category__slider-rightArrow"><use xlink:href="../images/sprite.svg#roundarrow-right"></svg></button>',
+  });
+  $(".reviews__items").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    autoplay: false,
+    draggable: false,
+    prevArrow:
+      '<button type="button" class="reviews__slick-prev"><svg class="reviews__slider-rightArrow"><use xlink:href="../images/sprite.svg#reviews-arrow-left-icon"></svg></button>',
+    nextArrow:
+      '<button type="button" class="reviews__slick-next"><svg class="reviews__slider-rightArrow"><use xlink:href="../images/sprite.svg#reviews-arrow-right-icon"></svg></button>',
   });
 });
 

@@ -201,8 +201,8 @@
     position: absolute;
   }
 
-  .slick-next,
-  .slick-prev {
+  &__slick-next,
+  &__slick-prev {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -212,19 +212,19 @@
     margin: 0;
   }
 
-  .slick-next:hover,
-  .slick-prev:hover {
+  &__slick-next:hover,
+  &__slick-prev:hover {
     svg {
       fill: $accent;
     }
   }
 
-  .slick-prev {
+  &__slick-prev {
     left: 41%;
     bottom: -20px;
   }
 
-  .slick-next {
+  &__slick-next {
     right: 41%;
     bottom: -20px;
   }
@@ -523,6 +523,111 @@
       background-size: contain;
       background-image: url(../images/sprite.svg#subscribe);
     }
+  }
+}
+
+.reviews {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 46px;
+  }
+
+  &__img {
+    max-width: 433px;
+    max-height: 519px;
+    object-fit: cover;
+  }
+
+  &__items {
+    padding-top: 65px;
+    max-width: 573px;
+    max-height: 339px;
+    position: relative;
+
+    &::before,
+    &::after {
+      width: 57px;
+      height: 15px;
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      background-image: url(../images/sprite.svg#quotes-left-icon);
+      left: -50px;
+      top: 68px;
+    }
+    &::after {
+      right: -50px;
+      bottom: 40px;
+      background-image: url(../images/sprite.svg#quotes-right-icon);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item-text {
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+  }
+
+  &__item-author {
+  }
+
+  &__item-name {
+    font-size: 20px;
+    @extend %rubik-500;
+    color: $accent;
+    padding-bottom: 15px;
+  }
+
+  &__item-post {
+    font-size: 14px;
+    color: #aaa;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    bottom: -53px;
+  }
+
+  &__slick-next,
+  &__slick-prev {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+
+  &__slick-next:hover,
+  &__slick-prev:hover {
+    svg {
+      fill: $accent;
+    }
+  }
+
+  &__slick-prev {
+    right: 90px;
+    z-index: 5;
+  }
+
+  &__slick-next {
+    right: 10px;
+  }
+
+  &__slider-rightArrow,
+  &__slider-leftArrow {
+    width: 32px;
+    height: 32px;
+    fill: #7b7b7b;
   }
 }
 

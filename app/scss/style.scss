@@ -17,6 +17,7 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__list-item + .menu__list-item {
@@ -33,16 +34,33 @@
   }
 
   &__list-link--sign {
-    width: 120px;
-    height: 50.408px;
     padding: 14px 28px;
     border-radius: 5px;
     box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
     @extend %btn;
+    border: none;
   }
 
   &__list-link--sign:hover {
     color: #ffffff;
+  }
+
+  &__list-link--basket {
+    position: relative;
+  }
+
+  &__basket-num {
+    width: 14px;
+    height: 14px;
+    background-color: #ff6838;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    padding: 2px 4px;
+    top: -6px;
+    right: -8px;
+    position: absolute;
   }
 }
 
@@ -94,6 +112,7 @@
 }
 
 .category {
+  padding-top: 50px;
   padding-bottom: 400px;
   &__title {
     padding-bottom: 55px;
@@ -254,7 +273,7 @@
 }
 
 .advantages {
-  padding-bottom: 60px;
+  padding: 75px 0 75px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -330,7 +349,7 @@
 }
 
 .top-food {
-  padding-bottom: 83px;
+  padding: 75px 0 75px;
   &__title {
     text-align: center;
     margin-bottom: 50px;
@@ -400,8 +419,8 @@
 }
 
 .mobile-app {
-  padding-top: 45px;
-  padding-bottom: 70px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -446,8 +465,116 @@
   }
 }
 
+.reviews {
+  padding: 75px 0 75px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 46px;
+  }
+
+  &__img {
+    max-width: 433px;
+    max-height: 519px;
+    object-fit: cover;
+  }
+
+  &__items {
+    padding-top: 65px;
+    max-width: 573px;
+    max-height: 339px;
+    position: relative;
+
+    &::before,
+    &::after {
+      width: 57px;
+      height: 15px;
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      background-image: url(../images/sprite.svg#quotes-left-icon);
+      left: -50px;
+      top: 68px;
+    }
+    &::after {
+      right: -50px;
+      bottom: 40px;
+      background-image: url(../images/sprite.svg#quotes-right-icon);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 339px;
+  }
+
+  &__item-text {
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+  }
+
+  &__item-author {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  &__item-name {
+    font-size: 20px;
+    @extend %rubik-500;
+    color: $accent;
+    padding-bottom: 15px;
+  }
+
+  &__item-post {
+    font-size: 14px;
+    color: #aaa;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    bottom: -53px;
+  }
+
+  &__slick-next,
+  &__slick-prev {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+
+  &__slick-next:hover,
+  &__slick-prev:hover {
+    svg {
+      fill: $accent;
+    }
+  }
+
+  &__slick-prev {
+    right: 90px;
+    z-index: 5;
+  }
+
+  &__slick-next {
+    right: 10px;
+  }
+
+  &__slider-rightArrow,
+  &__slider-leftArrow {
+    width: 32px;
+    height: 32px;
+    fill: #7b7b7b;
+  }
+}
 .subscribe {
-  padding: 70px 0 60px;
+  padding: 75px 0 60px;
   &__inner {
     padding: 59px 0 56px;
     background-color: $accent;
@@ -525,112 +652,6 @@
     }
   }
 }
-
-.reviews {
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 46px;
-  }
-
-  &__img {
-    max-width: 433px;
-    max-height: 519px;
-    object-fit: cover;
-  }
-
-  &__items {
-    padding-top: 65px;
-    max-width: 573px;
-    max-height: 339px;
-    position: relative;
-
-    &::before,
-    &::after {
-      width: 57px;
-      height: 15px;
-      content: "";
-      position: absolute;
-    }
-
-    &::before {
-      background-image: url(../images/sprite.svg#quotes-left-icon);
-      left: -50px;
-      top: 68px;
-    }
-    &::after {
-      right: -50px;
-      bottom: 40px;
-      background-image: url(../images/sprite.svg#quotes-right-icon);
-    }
-  }
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &__item-text {
-    line-height: 45px;
-    letter-spacing: 0.5px;
-    font-size: 20px;
-  }
-
-  &__item-author {
-  }
-
-  &__item-name {
-    font-size: 20px;
-    @extend %rubik-500;
-    color: $accent;
-    padding-bottom: 15px;
-  }
-
-  &__item-post {
-    font-size: 14px;
-    color: #aaa;
-  }
-
-  .slick-arrow {
-    position: absolute;
-    bottom: -53px;
-  }
-
-  &__slick-next,
-  &__slick-prev {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
-  }
-
-  &__slick-next:hover,
-  &__slick-prev:hover {
-    svg {
-      fill: $accent;
-    }
-  }
-
-  &__slick-prev {
-    right: 90px;
-    z-index: 5;
-  }
-
-  &__slick-next {
-    right: 10px;
-  }
-
-  &__slider-rightArrow,
-  &__slider-leftArrow {
-    width: 32px;
-    height: 32px;
-    fill: #7b7b7b;
-  }
-}
-
 .footer {
   padding-top: 60px;
   &__content {

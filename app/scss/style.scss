@@ -10,10 +10,13 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .menu {
+  display: flex;
+  align-items: center;
   &__list {
     display: flex;
     justify-content: space-between;
@@ -33,7 +36,16 @@
     color: $accent;
   }
 
-  &__list-link--sign {
+  &__user-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-item {
+    margin-left: 60px;
+  }
+
+  &__user-link--sign {
     padding: 14px 28px;
     border-radius: 5px;
     box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
@@ -41,11 +53,11 @@
     border: none;
   }
 
-  &__list-link--sign:hover {
+  &__user-link--sign:hover {
     color: #ffffff;
   }
 
-  &__list-link--basket {
+  &__user-link--basket {
     position: relative;
   }
 
@@ -70,11 +82,13 @@
 
   &__inner {
     display: flex;
+    align-items: center;
   }
 
   &__info {
     padding-top: 100px;
     max-width: 530px;
+    width: 100%;
   }
 
   &__title {
@@ -95,6 +109,9 @@
   }
 
   &__img {
+    max-width: 689px;
+    max-height: 681.003px;
+    object-fit: cover;
   }
 
   &__btn {
@@ -112,17 +129,21 @@
 }
 
 .category {
-  padding-top: 50px;
-  padding-bottom: 400px;
+  .container {
+    padding: 0;
+  }
+  padding: 50px 0px 400px 0px;
   &__title {
     padding-bottom: 55px;
   }
   &__inner {
+    padding: 0 12px;
     position: relative;
   }
 
   &__slider-typeFood {
     max-width: 1172px;
+    width: 100% !important;
     position: absolute;
     visibility: hidden;
   }
@@ -132,9 +153,10 @@
   }
 
   &__buttons {
+    max-width: 1172px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     padding-bottom: 39px;
   }
 
@@ -173,19 +195,23 @@
   }
 
   &__slider-items {
+    width: 100% !important;
     display: flex !important;
-    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 20px;
+    justify-content: space-between;
   }
 
   &__slider-item {
-    max-width: 208px;
+    max-width: 210px;
     width: 100%;
     height: 279px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 12px;
+    justify-content: space-between;
   }
 
   &__item-img {
@@ -454,9 +480,8 @@
   }
 
   &__image {
-    width: 616.743px;
-    height: 480.593px;
-    overflow: hidden;
+    max-width: 616.743px;
+    object-fit: cover;
   }
 
   &__link-google {

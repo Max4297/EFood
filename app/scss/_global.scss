@@ -7,6 +7,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  color: $text;
+  background-image: url(../images/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 .main {
@@ -19,11 +24,6 @@ body {
 body {
   font-size: 18px;
   @extend %rubik-400;
-  color: $text;
-  background-image: url(../images/background.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
 }
 
 .container {
@@ -42,4 +42,8 @@ body {
 
 .accent-text {
   color: $accent;
+}
+
+.burger {
+  display: none;
 }

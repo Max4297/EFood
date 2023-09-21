@@ -11,6 +11,9 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
+            <button class="burger">
+              <span></span>
+            </button>
             <div class="logo">
               <svg class="svg-logo-dims">
                 <use href="images/sprite.svg#logo" alt="logo" />
@@ -30,23 +33,25 @@
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#">Contract</a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">
+              </ul>
+              <ul class="menu__user-list">
+                <li class="menu__user-item">
+                  <a class="menu__user-link" href="#">
                     <svg class="svg-search-icon-dims">
                       <use href="images/sprite.svg#search-icon"" alt="search-icon"/>
                     </svg>
                   </a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link menu__list-link--basket" href="#">
+                <li class="menu__user-item">
+                  <a class="menu__user-link menu__user-link--basket" href="#">
                     <svg class="svg-basket-icon-dims">
                       <use href="images/sprite.svg#basket-icon" alt="basket-icon" />
                     </svg>
                     <span class="menu__basket-num">4</span>
                   </a>
                 </li>
-                <li class="menu__list-item">
-                  <button href="#" class="menu__list-link menu__list-link--sign">
+                <li class="menu__user-item">
+                  <button href="#" class="menu__user-link menu__user-link--sign">
                     Sign Up
                   </button>
                 </li>
@@ -73,9 +78,7 @@
                   <a class="top__link" href="#">Download App</a>
                 </div>
               </div>
-              <div class="top__img">
-                <img src="../images/header.webp" alt="" />
-              </div>
+              <img class="top__img" src="../images/header.webp" alt="" />
             </div>
           </div>
         </section>

@@ -44,6 +44,16 @@ body {
   color: $accent;
 }
 
-.burger {
-  display: none;
+.btn-sign {
+  white-space: nowrap;
+  max-width: 120px;
+  padding: 14px 28px;
+  border-radius: 5px;
+  box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
+  @extend %btn;
+  border: none;
+}
+
+.btn-sign:hover {
+  color: $text;
 }

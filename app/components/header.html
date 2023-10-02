@@ -1,52 +1,60 @@
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <button class="burger">
-        <span></span>
-      </button>
-      <div class="logo">
+      <div class="header__logo logo">
         <svg class="svg-logo-dims">
           <use href="images/sprite.svg#logo" alt="logo" />
         </svg>
       </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Home</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Service</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Top cities</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Contract</a>
-          </li>
-        </ul>
-        <ul class="menu__user-list">
-          <li class="menu__user-item">
-            <a class="menu__user-link" href="#">
-              <svg class="svg-search-icon-dims">
-                <use href="images/sprite.svg#search-icon"" alt="search-icon"/>
-              </svg>
-            </a>
-          </li>
-          <li class="menu__user-item">
-            <a class="menu__user-link menu__user-link--basket" href="#">
-              <svg class="svg-basket-icon-dims">
-                <use href="images/sprite.svg#basket-icon" alt="basket-icon" />
-              </svg>
-              <span class="menu__basket-num">4</span>
-            </a>
-          </li>
-          <li class="menu__user-item">
-            <button href="#" class="menu__user-link menu__user-link--sign">
-              Sign Up
-            </button>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper-menu">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Home</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Service</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Top cities</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Contract</a>
+            </li>
+            <li class="menu__list-item menu__list-item--btn">
+              <button class="menu__list-link btn-sign" href="#">Sign In</button>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-menu">
+          <ul class="user-menu__list">
+            <li class="user-menu__list-item">
+              <a class="user-menu__list-link" href="#">
+                <svg class="svg-search-icon-dims">
+                  <use href="images/sprite.svg#search-icon"" alt="search-icon"/>
+                </svg>
+              </a>
+            </li>
+            <li class="user-menu__list-item">
+              <a
+                class="user-menu__list-link user-menu__list-link--basket"
+                href="#">
+                <svg class="svg-basket-icon-dims">
+                  <use href="images/sprite.svg#basket-icon" alt="basket-icon" />
+                </svg>
+                <span class="user-menu__list-basket-num">4</span>
+              </a>
+            </li>
+          </ul>
+          <button class="header__btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <button class="btn-sign">Sign Up</button>
+      </div>
     </div>
   </div>
 </header>

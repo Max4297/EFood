@@ -1,4 +1,8 @@
 $(function () {
+  $(".header__btn-menu").on("click", function () {
+    $(".menu").toggleClass("menu--open");
+  });
+
   $(".category__slider-typeFood").slick({
     slidesToShow: 1,
     slidesToScroll: 1,

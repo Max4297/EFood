@@ -7,19 +7,35 @@
 
 .header {
   padding: 50px 0;
-  &__inner {
+  &__inner,
+  &__wrapper-menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn-sign {
+  }
+
+  &__btn-sign:hover {
+  }
+
+  &__btn-menu {
+    display: none;
+  }
+  &__logo {
   }
 }
 
 .menu {
+  justify-content: flex-end;
   display: flex;
   align-items: center;
+  margin-right: 60px;
   &__list {
+    max-width: 724px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
   }
 
@@ -36,32 +52,26 @@
     color: $accent;
   }
 
-  &__user-list {
+  &__list-item--btn {
+    display: none;
+  }
+}
+
+.user-menu {
+  &__list {
     display: flex;
     align-items: center;
   }
 
-  &__user-item {
-    margin-left: 60px;
+  &__list-item {
+    margin-right: 60px;
   }
 
-  &__user-link--sign {
-    padding: 14px 28px;
-    border-radius: 5px;
-    box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
-    @extend %btn;
-    border: none;
-  }
-
-  &__user-link--sign:hover {
-    color: #ffffff;
-  }
-
-  &__user-link--basket {
+  &__list-link--basket {
     position: relative;
   }
 
-  &__basket-num {
+  &__list-basket-num {
     width: 14px;
     height: 14px;
     background-color: #ff6838;

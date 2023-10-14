@@ -44,14 +44,12 @@
     }
     &__buttons-item,
     &__slider-item {
-      margin: 15px 20px;
-    }
-    &__slider-items {
+      margin: 15px 40px;
     }
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 887px) {
   .header {
     padding-top: -200px;
     &__btn-menu {
@@ -157,9 +155,49 @@
     &__slick-next {
       right: 32%;
     }
-    &__buttons-item,
-    &__slider-item {
-      margin: 15px 40px;
+  }
+
+  .advantages {
+    &__info {
+      max-width: 60%;
+    }
+    &__info-title {
+      font-size: 24px;
+      line-height: 25px;
+    }
+    &__info-text {
+      font-size: 18px;
+    }
+    &__info-deliveryMen,
+    &__info-stores,
+    &__info-time {
+      font-size: 18px;
+    }
+  }
+  .top-food {
+    padding: 30px 0 30px;
+  }
+
+  .mobile-app {
+    &__inner {
+    }
+
+    &__info {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__wrapper-links {
+    }
+
+    &__image {
+    }
+
+    &__link-google {
     }
   }
 }
@@ -175,9 +213,62 @@
     &__slick-next {
       right: 20%;
     }
-    &__buttons-item,
-    &__slider-item {
-      margin: 15px 40px;
+  }
+  .advantages {
+    padding: 30px 0 30px;
+    &__img {
+      display: none;
+    }
+    &__info {
+      max-width: max-content;
+      margin: 0 auto;
+    }
+    &__inner {
+    }
+    &__info-title {
+      text-align: center;
+    }
+    // &__info-text {
+    //   font-size: 18px;
+    // }
+    &__info-deliveryMen,
+    &__info-stores,
+    &__info-time {
+      padding-left: 55px;
+      &::before {
+      }
+    }
+    &__info-link {
+      margin: 0 auto;
+    }
+  }
+  .top-food {
+    &__title {
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+
+    &__item-img {
+      max-width: 280px;
+    }
+
+    &__item-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__item-time {
+      font-size: 16px;
+      padding-left: 38px;
+      padding-right: 11px;
+    }
+
+    &__item-link {
+      padding: 3px 20px;
     }
   }
 }

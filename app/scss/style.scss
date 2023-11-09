@@ -399,7 +399,7 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__item {
@@ -456,7 +456,8 @@
 }
 
 .mobile-app {
-  padding-top: 75px;
+  display: flex;
+  padding-top: 140px;
   padding-bottom: 75px;
   &__inner {
     display: flex;
@@ -490,9 +491,10 @@
     justify-content: space-between;
   }
 
-  &__image {
+  &__image-wrapper {
     max-width: 616.743px;
     object-fit: cover;
+    width: 100%;
   }
 
   &__link-google {

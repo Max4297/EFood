@@ -47,6 +47,38 @@
       margin: 15px 40px;
     }
   }
+  .mobile-app {
+    padding: 75px 0;
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__info {
+      order: 2;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    &__text {
+    }
+
+    &__image-wrapper {
+      margin-bottom: 30px;
+    }
+
+    &__wrapper-links {
+      margin: 0 auto;
+    }
+
+    &__image {
+    }
+
+    &__link-google {
+    }
+  }
 }
 
 @media (max-width: 887px) {
@@ -177,29 +209,6 @@
   .top-food {
     padding: 30px 0 30px;
   }
-
-  .mobile-app {
-    &__inner {
-    }
-
-    &__info {
-    }
-
-    &__title {
-    }
-
-    &__text {
-    }
-
-    &__wrapper-links {
-    }
-
-    &__image {
-    }
-
-    &__link-google {
-    }
-  }
 }
 
 @media (max-width: 596px) {
@@ -269,6 +278,38 @@
 
     &__item-link {
       padding: 3px 20px;
+    }
+  }
+  .mobile-app {
+    padding: 75px 0;
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__info {
+      order: 2;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__image-wrapper {
+    }
+
+    &__wrapper-links {
+    }
+
+    &__image {
+    }
+
+    &__link-google {
     }
   }
 }

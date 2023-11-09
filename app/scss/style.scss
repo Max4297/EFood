@@ -511,7 +511,7 @@
     padding-right: 46px;
   }
 
-  &__img {
+  &__image-wrraper {
     max-width: 433px;
     max-height: 519px;
     object-fit: cover;
@@ -520,27 +520,6 @@
   &__items {
     padding-top: 65px;
     max-width: 573px;
-    max-height: 339px;
-    position: relative;
-
-    &::before,
-    &::after {
-      width: 57px;
-      height: 15px;
-      content: "";
-      position: absolute;
-    }
-
-    &::before {
-      background-image: url(../images/sprite.svg#quotes-left-icon);
-      left: -50px;
-      top: 68px;
-    }
-    &::after {
-      right: -50px;
-      bottom: 40px;
-      background-image: url(../images/sprite.svg#quotes-right-icon);
-    }
   }
 
   &__item {
@@ -548,12 +527,33 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 339px;
+    max-width: 573px;
   }
 
   &__item-text {
+    padding: 0 30px;
     line-height: 45px;
-    letter-spacing: 0.5px;
     font-size: 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    &::before,
+    &::after {
+      width: 61px;
+      height: 16px;
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      background-image: url(../images/sprite.svg#quotes-left-icon);
+      left: -17px;
+      top: 0;
+    }
+    &::after {
+      bottom: -20px;
+      right: 0px;
+      background-image: url(../images/sprite.svg#quotes-right-icon);
+    }
   }
 
   &__item-author {
@@ -575,7 +575,7 @@
 
   .slick-arrow {
     position: absolute;
-    bottom: -53px;
+    bottom: 100px;
   }
 
   &__slick-next,

@@ -273,6 +273,29 @@
     &__item-post {
     }
   }
+  .subscribe {
+    padding: 30px 0;
+    &__inner {
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__form {
+      max-width: 600px;
+    }
+
+    &__input {
+    }
+
+    &__btn {
+    }
+  }
 }
 
 @media (max-width: 596px) {
@@ -373,6 +396,39 @@
     }
 
     &__item-post {
+    }
+  }
+  .subscribe {
+    &__inner {
+      padding: 30px 5px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__form {
+      max-width: 400px;
+    }
+
+    &__input {
+      padding: 0;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    &__btn {
+      max-width: 120px;
+      padding: 15px 10px 15px 29px;
+      font-size: 16px;
+      &::before {
+        left: -14px;
+      }
     }
   }
 }

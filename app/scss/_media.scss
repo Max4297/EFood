@@ -62,21 +62,12 @@
       text-align: center;
     }
 
-    &__text {
-    }
-
     &__image-wrapper {
       margin-bottom: 30px;
     }
 
     &__wrapper-links {
       margin: 0 auto;
-    }
-
-    &__image {
-    }
-
-    &__link-google {
     }
   }
   .reviews {
@@ -87,14 +78,8 @@
       padding-right: 0;
     }
 
-    &__img {
-    }
-
     &__items {
       padding-top: 0;
-    }
-
-    &__item {
     }
 
     &__item-text {
@@ -106,16 +91,49 @@
       }
     }
 
-    &__item-author {
-    }
-
-    &__item-name {
-    }
-
-    &__item-post {
-    }
     .slick-arrow {
       bottom: 10px;
+    }
+  }
+  .footer {
+    &__service-title,
+    &__company-title,
+    &__supports-title,
+    &__resources-title {
+      padding-bottom: 12px;
+    }
+    &__content {
+      display: grid;
+      grid-template-areas:
+        "A B C "
+        "A D E";
+      justify-content: space-between;
+    }
+    &__info {
+      grid-area: A;
+      align-self: center;
+    }
+    &__resources-item,
+    &__service-item,
+    &__company-item,
+    &__supports-item {
+      padding-bottom: 10px;
+    }
+    &__service {
+      grid-area: B;
+      padding-bottom: 20px;
+    }
+    &__company {
+      grid-area: C;
+      padding-bottom: 20px;
+    }
+    &__supports {
+      grid-area: D;
+      padding-bottom: 20px;
+    }
+    &__resources {
+      grid-area: E;
+      padding-bottom: 20px;
     }
   }
 }
@@ -164,6 +182,7 @@
     transition: all 0.5s;
     position: absolute;
     left: 0;
+    justify-content: center;
 
     &--open {
       transform: translateY(222px);
@@ -248,35 +267,8 @@
   .top-food {
     padding: 30px 0 30px;
   }
-  .reviews {
-    &__inner {
-    }
-
-    &__img {
-    }
-
-    &__items {
-    }
-
-    &__item {
-    }
-
-    &__item-text {
-    }
-
-    &__item-author {
-    }
-
-    &__item-name {
-    }
-
-    &__item-post {
-    }
-  }
   .subscribe {
     padding: 30px 0;
-    &__inner {
-    }
 
     &__title {
       font-size: 32px;
@@ -289,11 +281,10 @@
     &__form {
       max-width: 600px;
     }
-
-    &__input {
-    }
-
-    &__btn {
+  }
+  .footer {
+    &__content {
+      flex-wrap: wrap;
     }
   }
 }
@@ -319,20 +310,13 @@
       max-width: max-content;
       margin: 0 auto;
     }
-    &__inner {
-    }
     &__info-title {
       text-align: center;
     }
-    // &__info-text {
-    //   font-size: 18px;
-    // }
     &__info-deliveryMen,
     &__info-stores,
     &__info-time {
       padding-left: 55px;
-      &::before {
-      }
     }
     &__info-link {
       margin: 0 auto;
@@ -371,31 +355,12 @@
     }
   }
   .reviews {
-    &__inner {
-    }
-
-    &__img {
-    }
-
     &__items {
       max-width: 335px;
     }
-
-    &__item {
-    }
-
     &__item-text {
       font-size: 18px;
       line-height: 30px;
-    }
-
-    &__item-author {
-    }
-
-    &__item-name {
-    }
-
-    &__item-post {
     }
   }
   .subscribe {
@@ -431,6 +396,47 @@
       }
     }
   }
+  .footer {
+    padding-top: 30px;
+    &__content {
+      grid-template-areas:
+        "A A"
+        "B C"
+        "D E";
+      justify-content: space-around;
+      padding-bottom: 0;
+    }
+
+    &__info {
+      align-self: unset;
+      padding-bottom: 20px;
+    }
+
+    &__logo {
+      padding-bottom: 15px;
+    }
+
+    &__info-location {
+      padding-bottom: 15px;
+    }
+
+    &__info-phone {
+      padding-bottom: 15px;
+    }
+
+    &__info-email {
+      padding-bottom: 15px;
+    }
+
+    &__copywriting {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__copywriting-list {
+      min-height: 30px;
+    }
+  }
 }
 
 @media (max-width: 420px) {
@@ -455,6 +461,17 @@
   .category {
     &__title {
       font-size: 28px;
+    }
+  }
+  .footer {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__info {
+      align-self: unset;
+      text-align: center;
     }
   }
 }

@@ -13,17 +13,8 @@
     align-items: center;
     justify-content: space-between;
   }
-
-  &__btn-sign {
-  }
-
-  &__btn-sign:hover {
-  }
-
   &__btn-menu {
     display: none;
-  }
-  &__logo {
   }
 }
 
@@ -450,9 +441,6 @@
     box-shadow: 0px 5px 12px 0px rgba(255, 104, 56, 0.19);
     border-radius: 20px 20px 0px 20px;
   }
-
-  &__item-arrow {
-  }
 }
 
 .mobile-app {
@@ -721,12 +709,6 @@
   &__social-list {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__social-item {
-  }
-
-  &__service {
   }
 
   &__service-title,
